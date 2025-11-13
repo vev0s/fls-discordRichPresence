@@ -1,6 +1,6 @@
 const discord = require('discord-rpc');
 const winprocess = require("node-process-windows");
-const clientId = '787606049707655178';
+const clientId = 'CLIENT_ID';
 
 discord.register(clientId);
 
@@ -49,5 +49,6 @@ rpc.on('ready', () => {
         let a = proc();
     }, 30000);
 });
+
 
 rpc.login({ clientId }).catch(console.error);
